@@ -1,0 +1,116 @@
+# Location: /home/.config/i3blocks
+#
+# i3blocks config file
+#
+# Please see man i3blocks for a complete reference!
+# The man page is also hosted at http://vivien.github.io/i3blocks
+#
+# List of valid properties:
+#
+# align
+# color
+# command
+# full_text
+# instance
+# interval
+# label
+# min_width
+# name
+# separator
+# separator_block_width
+# short_text
+# signal
+# urgent
+
+# Global properties
+#
+# The top properties below are applied to every block, but can be overridden.
+# Each block command defaults to the script name to avoid boilerplate.
+command=$SCRIPT_DIR/$BLOCK_NAME
+separator_block_width=30
+markup=none
+
+# CPU usage
+[cpu_usage]
+#command=$SCRIPT_DIR/cpu_usage
+interval=10
+label= 
+#min_width=CPU: 100.00%
+#T_WARN=50
+#T_CRIT=80
+#DECIMALS=2
+
+[temperature]
+#command=$SCRIPT_DIR/temperature
+label= 
+interval=10
+#T_WARN=70
+#T_CRIT=90
+#SENSOR_CHIP=""
+
+[memory]
+#command=$SCRIPT_DIR/memory
+label= 
+interval=30
+
+[memory]
+#command=$SCRIPT_DIR/memory
+label= 
+instance=swap
+interval=30
+
+[disk]
+#command=$SCRIPT_DIR/disk
+label= 
+#instance=$HOME
+#ALERT_LOW=10
+interval=30
+
+[wifi]
+instance=wlx001c10eb1ed7
+#command=$SCRIPT_DIR/wifi
+label= 
+interval=10
+
+[iface]
+#command=$SCRIPT_DIR/iface
+label= 
+#iface=wlx001c10eb1ed7
+#iface=wlan0
+#ADDRESS_FAMILY=inet4?
+color=#00FF00
+interval=10
+
+[volume]
+#command=$SCRIPT_DIR/volume
+#label=♪
+label= 
+interval=10
+signal=
+#STEP=5%
+#MIXER=[determined automatically]
+#SCONTROL=[determined automatically]
+
+[time]
+label= 
+command=date '+%Y-%m-%d %H:%M:%S'
+interval=5
+
+[shutdown_menu]
+full_text=  
+# If you are using FontAwesome, we recommend the power-off icon:
+# http://fontawesome.io/icon/power-off/
+#command=$SCRIPT_DIR/shutdown_menu
+#FG_COLOR=#bbbbbb
+#BG_COLOR=#111111
+#HLFG_COLOR=#111111
+#HLBG_COLOR=#bbbbbb
+#BORDER_COLOR=#222222
+#ROFI_TEXT=Menu:
+#ROFI_OPTIONS=-width 11 -location 3 -hide-scrollbar -bw 2
+#ZENITY_TITLE=Menu
+#ZENITY_TEXT=Action:
+#ZENITY_OPTIONS=--column= --hide-header
+#ENABLE_CONFIRMATIONS=true (must be true or false)
+#LAUNCHER=rofi (must be rofi or zenity)
+#LOCKSCRIPT=i3lock --color=${BG_COLOR#"#"}
