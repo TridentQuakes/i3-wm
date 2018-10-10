@@ -1,4 +1,5 @@
 # Location: /home/.config/i3blocks
+# Blocklets Location: /home/.config/i3blocks/blocklets
 #
 # NOTE: Use this or i3blocks but not both. Configure in /home/.config/i3/config file.
 #
