@@ -1,5 +1,7 @@
 # Location: /home/.config/i3blocks
 #
+# NOTE: Use this or i3blocks but not both. Configure in /home/.config/i3/config file.
+#
 # i3blocks config file
 #
 # Please see man i3blocks for a complete reference!
