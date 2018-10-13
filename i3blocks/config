@@ -96,7 +96,8 @@ signal=
 
 [time]
 label= 
-command=date '+%Y-%m-%d %H:%M:%S'
+#command=date '+%Y-%m-%d %H:%M:%S'
+command=date '+%a %b %d %Y %I:%M %p'
 interval=5
 
 [shutdown_menu]
